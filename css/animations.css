@@ -101,3 +101,32 @@
 .ex-11-icon:hover{
     transform: rotate(-300deg);
 } 
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: ex-12-top 2s linear;
+}
+@keyframes ex-12-top {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 70px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: ex-12-bottom 2s linear;
+}
+@keyframes ex-12-bottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 50px);
+    }
+    100% {
+        right: 20%;
+    }
+}
