@@ -61,3 +61,28 @@
     filter: grayscale(80%) saturate(50%);
 }
 
+
+
+.ex-8-img{
+    transition: border-radius ease 2s, filter ease 2s;
+}
+.ex-8-img:hover{
+    filter: grayscale(70%);
+    border-radius: 25px;
+}
+
+
+
+.ex-9-img{
+    transition: border-radius ease 2s, filter ease 2s, width ease 2s;
+}
+.ex-9-img:hover{
+    filter: hue-rotate(90deg) brightness(0.5);
+    border-radius: 25px;
+    width: 700px;
+}
+
+
+
+
+
