@@ -79,10 +79,25 @@
 .ex-9-img:hover{
     filter: hue-rotate(90deg) brightness(0.5);
     border-radius: 25px;
-    width: 700px;
+    width: 650px;
 }
 
+.ex-10-icon{
+    animation-name: ex-10;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+@keyframes ex-10{
+    100%{
+        transform: rotate(-360deg);
+    }
+} 
 
 
-
-
+.ex-11-icon{
+    transition: transform ease 1s;
+}
+.ex-11-icon:hover{
+    transform: rotate(-300deg);
+} 
