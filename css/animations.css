@@ -35,21 +35,19 @@
 
 
 .ex-5-square{
-    transition: width ease 1s, height ease 1s;
+    transition: transform ease 1s, height ease 1s;
 }
 .ex-5-square:hover{
-    width: 125px;
-    height: 125px;
+    transform: scale(2);
 }
 .ex-5-square:active{
-    width: 25px;
-    height: 25px;
+    transform: scale(0.5);
 }
 
 
 
 .ex-6-img:hover{
-    filter: grayscale(100%);
+    filter: grayscale(1);
 }
 
 
@@ -74,12 +72,12 @@
 
 
 .ex-9-img{
-    transition: border-radius ease 2s, filter ease 2s, width ease 2s;
+    transition: border-radius ease 2s, filter ease 2s, transform ease 2s;
 }
 .ex-9-img:hover{
     filter: hue-rotate(90deg) brightness(0.5);
     border-radius: 25px;
-    width: 650px;
+    transform: scale(1.5);
 }
 
 .ex-10-icon{
@@ -90,7 +88,7 @@
 }
 @keyframes ex-10{
     100%{
-        transform: rotate(-360deg);
+        transform: rotate(-1turn);
     }
 } 
 
@@ -110,7 +108,7 @@
         left: 10%;
     }
     50% {
-        left: calc(100% - 70px);
+        left: calc(100% - 60px);
     }
     100% {
         left: 10%;
@@ -124,7 +122,7 @@
         right: 20%;
     }
     50% {
-        right: calc(100% - 50px);
+        right: calc(100% - 60px);
     }
     100% {
         right: 20%;
@@ -132,7 +130,7 @@
 }
 
 .ex-13-button:hover .ex-13-top-white {
-    animation: ex-13-top 1s linear;
+    animation: ex-13-top 2s ease-in-out;
 }
 @keyframes ex-13-top {
         0% {
@@ -140,16 +138,16 @@
             top: -10px;
         }
         20% {
-            left: 90%;
+            left: calc(100% - 30px);
             top: -10px;
         }
         40%{
-            left: 90%;
-            top: 50px;
+            left: calc(100% - 30px);
+            top: 60px;
         }
         60%{
             left: 0%;
-            top: 50px;
+            top: 60px;
         }
         80% {
             left: -10px;
@@ -162,7 +160,7 @@
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
-    animation: ex-13-bottom 1s linear;
+    animation: ex-13-bottom 2s ease-in-out;
 }
 
 @keyframes ex-13-bottom {
